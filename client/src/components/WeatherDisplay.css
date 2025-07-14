@@ -1,0 +1,96 @@
+
+/* src/components/WeatherDisplay.css */
+.weather-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.main-weather-card {
+  background: white;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+}
+
+.city-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.city-info h2 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.condition {
+  font-size: 1rem;
+  color: #666;
+}
+
+.temperature-section {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.temperature {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.feels-like {
+  font-size: 1rem;
+  color: #666;
+}
+
+.weather-details-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.detail-card {
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.detail-card h3 {
+  margin: 0 0 5px 0;
+  font-size: 0.9rem;
+}
+
+.detail-card p {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.status-badge {
+  padding: 8px 15px;
+  border-radius: 20px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+/* Condition-based styling */
+.status-badge.sunny {
+  background: #ffd700;
+  color: #333;
+}
+
+.status-badge.cloudy {
+  background: #87ceeb;
+  color: #333;
+}
+
+.status-badge.rainy {
+  background: #4da1f2;
+  color: white;
+}
